@@ -1,0 +1,130 @@
+python-setproctitle (1.2.2-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Gordon Ball ]
+  * Drop explicit debug package python3-setproctitle-dbg
+
+ -- Gordon Ball <gordon@chronitis.net>  Sat, 04 Sep 2021 19:00:17 +0000
+
+python-setproctitle (1.2.2-1) unstable; urgency=medium
+
+  * d/watch: new github tarball URL
+  * New upstream version 1.2.2
+
+ -- Gordon Ball <gordon@chronitis.net>  Sun, 15 Aug 2021 19:45:12 +0000
+
+python-setproctitle (1.2.1-1) unstable; urgency=medium
+
+  * New upstream version 1.2.1
+
+ -- Gordon Ball <gordon@chronitis.net>  Fri, 04 Dec 2020 08:08:32 +0000
+
+python-setproctitle (1.2-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Gordon Ball ]
+  * Use github rather than pypi tarball in d/watch
+  * New upstream version 1.2
+  * Update copyright years
+  * Simplify the build
+     + Testing with python3 no longer requires 2to3
+     + Build using setuptools instead of distutils
+     + Use default pybuild test
+  * Add myself to uploaders
+
+ -- Gordon Ball <gordon@chronitis.net>  Fri, 27 Nov 2020 18:43:10 +0000
+
+python-setproctitle (1.1.10-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Gordon Ball ]
+  * Fix FTBFS with multiple supported python versions (Closes: #972195)
+
+ -- Gordon Ball <gordon@chronitis.net>  Wed, 14 Oct 2020 20:31:27 +0000
+
+python-setproctitle (1.1.10-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Deprecating priority extra as per policy 4.0.1
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Gordon Ball ]
+  * Drop python2 support (Closes: #938166)
+  * Enable testing on python3 (Closes: #849023)
+  * Run the testsuite as an autopkgtest
+  * Declare Rules-Requires-Root: no
+  * Update Standards-Version to 4.5.0
+  * Don't build an automatic -dbgsym package since there is an explicit -dbg
+  * Update d/watch to use pypi.debian.net; the old link was broken
+  * Don't convert (non-manpage) restructuredtext documentation to manpages
+
+ -- Gordon Ball <gordon@chronitis.net>  Tue, 12 May 2020 15:50:52 +0000
+
+python-setproctitle (1.1.10-1) unstable; urgency=medium
+
+  * Team upload.
+  * Maintain package in git with git-dpm.
+  * Change copyright file into DEP-5 format and add myself to copyright.
+  * Change build system to pybuild.
+  * Build with hardening flags.
+  * Bump Standard-Versions to 3.9.8. Nothing to change.
+  * Fix some lintian errors in the descriptions and copyright (Closes: #833180).
+  * Add VCS fields and change homepage to github.
+  * Move compat to version 9.
+  * New upstream release.
+  * Add Multi-Arch:same in control as suggested by dedup.
+
+ -- Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>  Wed, 14 Sep 2016 01:05:17 +0200
+
+python-setproctitle (1.1.8-1~bpo70+1) wheezy-backports; urgency=medium
+
+  * Rebuild for wheezy-backports.
+
+ -- Alessio Treglia <alessio@debian.org>  Mon, 21 Jul 2014 12:25:45 +0100
+
+python-setproctitle (1.1.8-1) unstable; urgency=low
+
+  * New Upstream Release (Closes: #675423)
+  * Adds Python3 support
+  * Change to using dh_python2 and dh_python3
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Sun, 08 Jun 2014 15:36:32 +1200
+
+python-setproctitle (1.0.1-1) unstable; urgency=low
+
+  * New upstream version.
+  * Added missing dependency for python, thanks to Sven Joachim for reporting
+    this (Closes: #584078).
+  * Fixed problem when building package more than once, thanks to Jakub Wilk
+    for reporting this (Closes: #583887).
+  * Disabled tests for kfreebsd until setproctitle is fixed in libbsd.
+
+ -- Örjan Persson <orange@fobie.net>  Mon, 31 May 2010 20:58:30 +0200
+
+python-setproctitle (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #583506).
+
+ -- Örjan Persson <orange@fobie.net>  Thu, 27 May 2010 20:39:52 +0200

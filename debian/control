@@ -1,0 +1,37 @@
+Source: python-setproctitle
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Matthew Grant <matt@mattgrant.net.nz>,
+ Gordon Ball <gordon@chronitis.net>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ procps,
+ python3-all-dev,
+ python3-pytest,
+ python3-setuptools,
+Standards-Version: 4.5.1
+Homepage: https://github.com/dvarrazzo/py-setproctitle
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-setproctitle.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-setproctitle
+Rules-Requires-Root: no
+
+Package: python3-setproctitle
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+Description: Setproctitle implementation for Python 3
+ The library allows a process to change its title (as displayed by system tools
+ such as ps and top).
+ .
+ Changing the title is mostly useful in multi-process systems, for example when
+ a master process is forked: changing the children's title allows one to
+ identify the task each process is busy with. The technique is used by
+ PostgreSQL and the OpenSSH Server for example.
+ .
+ This is the Python 3 package.

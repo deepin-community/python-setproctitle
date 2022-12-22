@@ -1,0 +1,2 @@
+version=4
+https://github.com/dvarrazzo/py-setproctitle/tags .*/archive/refs/tags/version-@ANY_VERSION@@ARCHIVE_EXT@
