@@ -1,3 +1,9 @@
+python-setproctitle (1.2.2-2deepin1) unstable; urgency=medium
+
+  * No source change upload against python 3.12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Mon, 08 Jul 2024 09:56:16 +0200
+
 python-setproctitle (1.2.2-2) unstable; urgency=medium
 
   [ Debian Janitor ]
